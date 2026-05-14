@@ -5,7 +5,8 @@ An independent data intelligence and predictive analytics platform built to harm
 ---
 
 ##  Live Interactive Application
-**[Click Here to Interact with the Live Streamlit Dashboard](PASTE_YOUR_STREAMLIT_URL_HERE)**  
+**[Click Here to Interact with the Live Streamlit Dashboard](https://red-sea-fisheries-intelligence-mpdfysmlem7npnrjfeoh7m.streamlit.app/)**
+  
 *(Explore interactive country multi-select filters, dynamic species sliders, and what-if machine learning policy simulators).*
 
 ---
