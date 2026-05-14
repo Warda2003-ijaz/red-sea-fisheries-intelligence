@@ -70,7 +70,7 @@ To run this data application on your local machine, clone this repository and fo
 1. **Clone the repository:**
    ```bash
    git clone github.com
-   cd YOUR_REPO_NAME
+   cd https://github.com/Warda2003-ijaz/red-sea-fisheries-intelligence/blob/main/app.py
    ```
 
 2. **Install all required dependencies:**
