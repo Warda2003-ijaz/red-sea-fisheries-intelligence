@@ -18,9 +18,12 @@ st.markdown("---")
 # Load Data (Cached to make the app fast)
 @st.cache_data
 def load_and_clean_data():
-    capture_df = pd.read_csv('capture_quantity.csv')
-    country_df = pd.read_csv('cl_fi_country_groups.csv')
-    species_df = pd.read_csv('cl_fi_species_groups.csv')
+    
+    # Updated file paths to match your root folder structure with correct encoding
+    capture_df = pd.read_csv('capture_quantity.csv', encoding='latin1')
+    country_df = pd.read_csv('cl_fi_country_groups.csv', encoding='latin1')
+    species_df = pd.read_csv('cl_fi_species_groups.csv', encoding='latin1')
+
 
     country_clean = country_df[
         ['UN_Code', 'ISO3_Code', 'Name_En', 'Continent_Group_En', 'EcoClass_Group_En', 'GeoRegion_Group_En']]
