@@ -18,9 +18,10 @@ st.markdown("---")
 # Load Data (Cached to make the app fast)
 @st.cache_data
 def load_and_clean_data():
-    capture_df = pd.read_csv('capture_quantity.csv', encoding='cp1252', errors='ignore')
-    country_df = pd.read_csv('cl_fi_country_groups.csv', encoding='cp1252', errors='ignore')
-    species_df = pd.read_csv('cl_fi_species_groups.csv', encoding='cp1252', errors='ignore')
+    # Fully resilient data parsers configured to bypass encoding blocks and skip corrupt markers
+    capture_df = pd.read_csv('capture_quantity.csv', encoding='cp1252', encoding_errors='ignore')
+    country_df = pd.read_csv('cl_fi_country_groups.csv', encoding='cp1252', encoding_errors='ignore')
+    species_df = pd.read_csv('cl_fi_species_groups.csv', encoding='cp1252', encoding_errors='ignore')
 
 
     country_clean = country_df[
